@@ -1,0 +1,19 @@
+{
+  "name": "water-intake-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "web-push": "^3.4.4"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
